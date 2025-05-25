@@ -1,0 +1,1383 @@
+type: collection.insomnia.rest/5.0
+name: ChallengeMottu
+meta:
+  id: wrk_a85905d40b164c81932073444dbd783f
+  created: 1747441802433
+  modified: 1747971441776
+collection:
+  - name: Endereco
+    meta:
+      id: fld_fb3fe2acb25e4cf4b46316c98f25bf0c
+      created: 1748041227632
+      modified: 1748041227632
+      sortKey: -1748041227633
+    children:
+      - url: http://localhost:8080/enderecos
+        name: Listar Todos
+        meta:
+          id: req_881c4ba1527c4b6ea8fffc4b87a7c3b5
+          created: 1748041233847
+          modified: 1748043606560
+          isPrivate: false
+          sortKey: -1748041233847
+        method: GET
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/enderecos/1
+        name: Listar um
+        meta:
+          id: req_1a6c61c2bb534b06b44b5c0f07f92594
+          created: 1748043209883
+          modified: 1748043620701
+          isPrivate: false
+          sortKey: -1748043209883
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/enderecos
+        name: Criar
+        meta:
+          id: req_0d0d2da46d324afca831d609eeb96259
+          created: 1748043234595
+          modified: 1748043629932
+          isPrivate: false
+          sortKey: -1748043234595
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            		"id": 6,
+            		"logradouro": "Avenida Paulista",
+            		"numero": "1000",
+            		"complemento": "Conjunto 101",
+            		"bairro": "Bela Vista",
+            		"cep": "01310000",
+            		"cidade": "São Paulo",
+            		"estado": "SP",
+            		"pais": "Brasil"
+            	}
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/enderecos/6
+        name: Atualizar
+        meta:
+          id: req_51188d5a98d34e30a6ed6623ef939c50
+          created: 1748043290342
+          modified: 1748043638404
+          isPrivate: false
+          sortKey: -1748043290342
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            		"id": 6,
+            		"logradouro": "Rua Muniz de Souza",
+            		"numero": "100",
+            		"complemento": "Conjunto 1010",
+            		"bairro": "Aclimação",
+            		"cep": "01310000",
+            		"cidade": "São Paulo",
+            		"estado": "SP",
+            		"pais": "Brasil"
+            	}
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/enderecos/6
+        name: Deletar
+        meta:
+          id: req_9c3d24354ce841fca72581c0e23daf6c
+          created: 1748043564344
+          modified: 1748043647699
+          isPrivate: false
+          sortKey: -1748043564344
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: FIlial
+    meta:
+      id: fld_9573951d4378432f8f976075116c64b0
+      created: 1748042758449
+      modified: 1748042758449
+      sortKey: -1748042758450
+    children:
+      - url: http://localhost:8080/filiais
+        name: Listar Todos
+        meta:
+          id: req_55248954f9cb4b2c9386fe88147f0428
+          created: 1748042763253
+          modified: 1748043767817
+          isPrivate: false
+          sortKey: -1748042763253
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/filiais/4
+        name: Listar Um
+        meta:
+          id: req_cb36449cfe474242b6f7fd926b4d6768
+          created: 1748043718239
+          modified: 1748043923615
+          isPrivate: false
+          sortKey: -1748043718239
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/filiais
+        name: Criar
+        meta:
+          id: req_ba873916a7a04b4ca73a7ad9513104df
+          created: 1748043721551
+          modified: 1748043894465
+          isPrivate: false
+          sortKey: -1748043721551
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            		"id": 4,
+            		"nome": "Mottu Acre",
+            		"cnpj": "98765432000455",
+            		"telefone": "(68) 9777-6666",
+            		"email": "bh@mottu.com.br",
+            		"ativo": "S",
+            		"idEndereco": 6
+            	}
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/filiais/4
+        name: Atualizar
+        meta:
+          id: req_6a0119550a334d7a891f53cff8ac97c1
+          created: 1748043727554
+          modified: 1748043954659
+          isPrivate: false
+          sortKey: -1748043727554
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            		"id": 4,
+            		"nome": "Mottu Acre",
+            		"cnpj": "98765432000455",
+            		"telefone": "(68) 9777-6666",
+            		"email": "bh@mottu.com.br",
+            		"ativo": "N",
+            		"idEndereco": 6
+            	}
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - name: Deletar
+        meta:
+          id: req_82bf8ecdccfa40558ef3e944ffbd2ad9
+          created: 1748043733152
+          modified: 1748043794535
+          isPrivate: false
+          sortKey: -1748043733152
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Historico Localizacao
+    meta:
+      id: fld_b0b6e18a444048b0b331782068a67061
+      created: 1748042807209
+      modified: 1748042807209
+      sortKey: -1748042807209
+    children:
+      - url: http://localhost:8080/historicos-localizacao
+        name: Listar Todos
+        meta:
+          id: req_bf1c49c544e0438e95059b90df445ca6
+          created: 1748042810072
+          modified: 1748044076717
+          isPrivate: false
+          sortKey: -1748042810072
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/historicos-localizacao/1
+        name: Listar Um
+        meta:
+          id: req_29adcac6709a4fac99bf9e4deb660a81
+          created: 1748043989784
+          modified: 1748044138714
+          isPrivate: false
+          sortKey: -1748043989784
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/historicos-localizacao
+        name: Criar
+        meta:
+          id: req_af6c7d67315f4616ac310a987af84365
+          created: 1748043994129
+          modified: 1748044177172
+          isPrivate: false
+          sortKey: -1748043994129
+        method: POST
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/historicos-localizacao/1
+        name: Atualizar
+        meta:
+          id: req_9660faedd5684d9f99bb9d2d5b581897
+          created: 1748043999725
+          modified: 1748044212770
+          isPrivate: false
+          sortKey: -1748043999725
+        method: PUT
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/historicos-localizacao/1
+        name: Deletar
+        meta:
+          id: req_da408cfabe5d4d6c8c35d8cb3b20ecea
+          created: 1748044005114
+          modified: 1748044218795
+          isPrivate: false
+          sortKey: -1748044005114
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Localizacao Moto
+    meta:
+      id: fld_876a3a04d3ec44178fdf58f0db412dd6
+      created: 1748042845103
+      modified: 1748042845103
+      sortKey: -1748042845103
+    children:
+      - url: http://localhost:8080/localizacoes-moto
+        name: Listar Todos
+        meta:
+          id: req_b71452192d764b3ba0b044ed0380308f
+          created: 1748042850226
+          modified: 1748044262343
+          isPrivate: false
+          sortKey: -1748042850226
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/localizacoes-moto/1
+        name: Listar Um
+        meta:
+          id: req_6479a2afc8f84767827dd8d56e51fd2f
+          created: 1748044225496
+          modified: 1748044294192
+          isPrivate: false
+          sortKey: -1748044225496
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/localizacoes-moto
+        name: Criar
+        meta:
+          id: req_f232c2c6452648d28a7befa4a4316358
+          created: 1748044227485
+          modified: 1748044314605
+          isPrivate: false
+          sortKey: -1748044227485
+        method: POST
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/localizacoes-moto/8
+        name: Atualizar
+        meta:
+          id: req_aa0ce30de1234eecbdbbe121b1428a7d
+          created: 1748044233457
+          modified: 1748044367915
+          isPrivate: false
+          sortKey: -1748044233457
+        method: PUT
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/localizacoes-moto/8
+        name: Deletar
+        meta:
+          id: req_88885009fe884eb784a89c6903011629
+          created: 1748044240970
+          modified: 1748044372785
+          isPrivate: false
+          sortKey: -1748044240970
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Motociclista
+    meta:
+      id: fld_b8699c3fba03407787f671524b644dfe
+      created: 1748042889304
+      modified: 1748042889304
+      sortKey: -1748042889304
+    children:
+      - url: http://localhost:8080/motociclistas
+        name: Listar Todos
+        meta:
+          id: req_9dbc27b5052842368dea0f8a43c5a658
+          created: 1748042892660
+          modified: 1748044413808
+          isPrivate: false
+          sortKey: -1748042892660
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/motociclistas/1
+        name: Listar Um
+        meta:
+          id: req_49ff419d03154d7ea715afe27f29901d
+          created: 1748044384725
+          modified: 1748044484198
+          isPrivate: false
+          sortKey: -1748044384725
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/motociclistas
+        name: Criar
+        meta:
+          id: req_cbd35fb7d14c4f8ea6f28146ed0d7bcf
+          created: 1748044387744
+          modified: 1748044492267
+          isPrivate: false
+          sortKey: -1748044387744
+        method: POST
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/motociclistas/1
+        name: Atualizar
+        meta:
+          id: req_0dcf64d7086241f1939523169da074f5
+          created: 1748044391569
+          modified: 1748044496647
+          isPrivate: false
+          sortKey: -1748044391569
+        method: PUT
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/motociclistas/4
+        name: Deletar
+        meta:
+          id: req_a8b36dbb6c0e4b81b74db16affc6efdc
+          created: 1748044396422
+          modified: 1748044511648
+          isPrivate: false
+          sortKey: -1748044396422
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Moto
+    meta:
+      id: fld_0d99114badb646308ad64d582c4df916
+      created: 1748042919779
+      modified: 1748042919779
+      sortKey: -1748042919779
+    children:
+      - url: http://localhost:8080/motos
+        name: Listar Todos
+        meta:
+          id: req_54bf190b05164e58a3c4bf07da1caa43
+          created: 1748042922130
+          modified: 1748044557600
+          isPrivate: false
+          sortKey: -1748042922130
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/motos/1
+        name: Listar Um
+        meta:
+          id: req_c7b3c7e360ec4378afd95f7db0618078
+          created: 1748044531689
+          modified: 1748044588105
+          isPrivate: false
+          sortKey: -1748044531689
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/motos
+        name: Criar
+        meta:
+          id: req_a24ae0f8f8d44ad7890062f5981b40f2
+          created: 1748044535899
+          modified: 1748044601323
+          isPrivate: false
+          sortKey: -1748044535899
+        method: POST
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/motos/8
+        name: Atualizar
+        meta:
+          id: req_332af1de47844344ac23700c2050a91b
+          created: 1748044540593
+          modified: 1748044624100
+          isPrivate: false
+          sortKey: -1748044540593
+        method: PUT
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/motos/8
+        name: Deletar
+        meta:
+          id: req_82675b62e4bf487080fbaa37232d0ef9
+          created: 1748044544788
+          modified: 1748044619019
+          isPrivate: false
+          sortKey: -1748044544788
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Nota fiscal
+    meta:
+      id: fld_f5b4505bd21c4e6a8ba896280a48f9ab
+      created: 1748042955807
+      modified: 1748044686557
+      sortKey: -1748042955807
+    children:
+      - url: http://localhost:8080/notas-fiscais
+        name: Listar Todos
+        meta:
+          id: req_3a2e473f9d944267b02fdb81bf13cba0
+          created: 1748042958268
+          modified: 1748044656683
+          isPrivate: false
+          sortKey: -1748042958268
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - name: Listar Um
+        meta:
+          id: req_9f8e962238f541828b63c47b002b831a
+          created: 1748044634271
+          modified: 1748044663285
+          isPrivate: false
+          sortKey: -1748044634271
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - name: Criar
+        meta:
+          id: req_b9ad890cc2954e1b936132d5944976fb
+          created: 1748044636898
+          modified: 1748044666802
+          isPrivate: false
+          sortKey: -1748044636898
+        method: POST
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - name: Atualizar
+        meta:
+          id: req_88ecb4ac24b947a88073a357a76e8014
+          created: 1748044641593
+          modified: 1748044673553
+          isPrivate: false
+          sortKey: -1748044641593
+        method: PUT
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - name: Deletar
+        meta:
+          id: req_7596772f420447b7aee08783a4b20585
+          created: 1748044645860
+          modified: 1748044680322
+          isPrivate: false
+          sortKey: -1748044645860
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Patio
+    meta:
+      id: fld_b47b63018f324fe1a56653096d9aca1c
+      created: 1748042996569
+      modified: 1748042996569
+      sortKey: -1748042996569
+    children:
+      - url: http://localhost:8080/patios
+        name: Listar Todos
+        meta:
+          id: req_a33526a5c0f54c97b5b49f8de0a2726d
+          created: 1748042999006
+          modified: 1748044716818
+          isPrivate: false
+          sortKey: -1748042999006
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - name: Listar Um
+        meta:
+          id: req_54427292e4a74e4291fca92c6bceec1a
+          created: 1748044692097
+          modified: 1748044723495
+          isPrivate: false
+          sortKey: -1748044692097
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - name: Criar
+        meta:
+          id: req_590b9a54ac19476b829c70bbea177375
+          created: 1748044695102
+          modified: 1748044727982
+          isPrivate: false
+          sortKey: -1748044695102
+        method: POST
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - name: Atualizar
+        meta:
+          id: req_05e83fac84494c058e6d7f63bd672010
+          created: 1748044699182
+          modified: 1748044732939
+          isPrivate: false
+          sortKey: -1748044699182
+        method: PUT
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - name: Deletar
+        meta:
+          id: req_8d998c01ebf44662b23d9136834b6840
+          created: 1748044704336
+          modified: 1748044738601
+          isPrivate: false
+          sortKey: -1748044704336
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Status Moto
+    meta:
+      id: fld_4b313b953a9746c88aecdb9bdc0d8064
+      created: 1748043037059
+      modified: 1748043037059
+      sortKey: -1748043037059
+    children:
+      - url: http://localhost:8080/status-moto
+        name: Listar Todos
+        meta:
+          id: req_e20c508fc5514dacaa10e101e5015f3e
+          created: 1748043039961
+          modified: 1748044790530
+          isPrivate: false
+          sortKey: -1748043039961
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/status-moto/5
+        name: Listar Um
+        meta:
+          id: req_c13b20a21ae44666b6e4cf13847ec970
+          created: 1748044743458
+          modified: 1748044797457
+          isPrivate: false
+          sortKey: -1748044743458
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/status-moto
+        name: Criar
+        meta:
+          id: req_ccf61887b83243f19d94ac325a4a292e
+          created: 1748044745752
+          modified: 1748044804686
+          isPrivate: false
+          sortKey: -1748044745752
+        method: POST
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/status-moto/5
+        name: Atualizar
+        meta:
+          id: req_caccec3caf054831889ecfb1c7208d3d
+          created: 1748044750929
+          modified: 1748044811171
+          isPrivate: false
+          sortKey: -1748044750929
+        method: PUT
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/status-moto/5
+        name: Deletar
+        meta:
+          id: req_11091fff79af4255b5ede205dcccdcec
+          created: 1748044755098
+          modified: 1748044817971
+          isPrivate: false
+          sortKey: -1748044755098
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Status operacao
+    meta:
+      id: fld_dad825c1f3774b7ca9661166ba12f824
+      created: 1748043068959
+      modified: 1748043068959
+      sortKey: -1748043068959
+    children:
+      - url: http://localhost:8080/status-operacao
+        name: Listar Todos
+        meta:
+          id: req_b3e0f9a7962d4953a96341c51b123c30
+          created: 1748043072039
+          modified: 1748044874158
+          isPrivate: false
+          sortKey: -1748043072039
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/status-operacao/1
+        name: Listar Um
+        meta:
+          id: req_02eeb3b882ca4dfc99747dd961dec004
+          created: 1748044826336
+          modified: 1748044879077
+          isPrivate: false
+          sortKey: -1748044826336
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/status-operacao
+        name: Criar
+        meta:
+          id: req_1eec8949fda5439abd49a9ed31601c7d
+          created: 1748044828162
+          modified: 1748044896899
+          isPrivate: false
+          sortKey: -1748044828162
+        method: POST
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/status-operacao/
+        name: Atualizar
+        meta:
+          id: req_4e7af3988ae6431dbce5a1e59c6db3e4
+          created: 1748044831412
+          modified: 1748044901786
+          isPrivate: false
+          sortKey: -1748044831412
+        method: PUT
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/status-operacao/
+        name: Deletar
+        meta:
+          id: req_e1c50ef85e624cf7b5e0862c5232e0d4
+          created: 1748044835131
+          modified: 1748044906710
+          isPrivate: false
+          sortKey: -1748044835131
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Tipo moto
+    meta:
+      id: fld_82597810a3f54c02b400a5762f301fe1
+      created: 1748043101036
+      modified: 1748043101036
+      sortKey: -1748043101036
+    children:
+      - url: http://localhost:8080/tipos-moto
+        name: Listar Todos
+        meta:
+          id: req_f26ccbba7abc4ba98fc8361c1924b941
+          created: 1748043104645
+          modified: 1748044938759
+          isPrivate: false
+          sortKey: -1748043104645
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/tipos-moto/1
+        name: Listar Um
+        meta:
+          id: req_7023a4a8a9844f8c9ece4361aff99e2c
+          created: 1748044910824
+          modified: 1748044966504
+          isPrivate: false
+          sortKey: -1748044910824
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/tipos-moto
+        name: Criar
+        meta:
+          id: req_73848bc855174128af21a8b17d51d719
+          created: 1748044912937
+          modified: 1748044971365
+          isPrivate: false
+          sortKey: -1748044912937
+        method: POST
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/tipos-moto/5
+        name: Atualizar
+        meta:
+          id: req_5984f776ffe64aabaeab8949090e9de2
+          created: 1748044921606
+          modified: 1748044985524
+          isPrivate: false
+          sortKey: -1748044921606
+        method: PUT
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/tipos-moto/5
+        name: Deletar
+        meta:
+          id: req_22aa8e115afd4fa989ee05bee77359d5
+          created: 1748044926773
+          modified: 1748044991437
+          isPrivate: false
+          sortKey: -1748044926773
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Zona Patio
+    meta:
+      id: fld_dbb5c054d50846c18b90e1308f964994
+      created: 1748043141813
+      modified: 1748043141813
+      sortKey: -1748043141813
+    children:
+      - url: http://localhost:8080/zonas-patio
+        name: Listar Todos
+        meta:
+          id: req_72a9b4b9e29343c0b1a21756a3f3ff44
+          created: 1748043145585
+          modified: 1748045050274
+          isPrivate: false
+          sortKey: -1748043145585
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/zonas-patio/1
+        name: Listar Um
+        meta:
+          id: req_34beff35948c4798b2ec6b660808a355
+          created: 1748045003260
+          modified: 1748045055013
+          isPrivate: false
+          sortKey: -1748045003260
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/zonas-patio
+        name: Criar
+        meta:
+          id: req_81b34b17c7bd41f9a27ff46d12f8afa5
+          created: 1748045021192
+          modified: 1748045058212
+          isPrivate: false
+          sortKey: -1748045021192
+        method: POST
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/zonas-patio/6
+        name: Atualizar
+        meta:
+          id: req_56ef53a223754646b8ef745d505a4f59
+          created: 1748045025085
+          modified: 1748045086630
+          isPrivate: false
+          sortKey: -1748045025085
+        method: PUT
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/zonas-patio/6
+        name: Deletar
+        meta:
+          id: req_79538ea9cbb64e749df578335b9ca4eb
+          created: 1748045034504
+          modified: 1748045092157
+          isPrivate: false
+          sortKey: -1748045034504
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_dfd908ba96ddf7d84170c4db4bb20884b4cfe889
+    created: 1747971083606
+    modified: 1747971083606
+environments:
+  name: Base Environment
+  meta:
+    id: env_dfd908ba96ddf7d84170c4db4bb20884b4cfe889
+    created: 1747441802465
+    modified: 1747971083495
+    isPrivate: false
