@@ -72,7 +72,7 @@ Cada entidade foi implementada com:
 * Classe Entity (JPA)
 * Repository estendendo JpaRepository
 * Service com métodos assíncronos e tratamento de erro
-* Controller com rotas: GET geral, GET por ID, GET com filtro, POST, PUT, DELETE
+* Controller com rotas: GET geral, GET por ID, POST, PUT, DELETE
 
 ---
 
